@@ -2,7 +2,8 @@
 console.log("Hello, I am running instead of playercore");
 
 var my_config = {
-	"use_VP9": false,
+	"use_VP9": true,
+	"use_AV1": true,
 	"use_5.1": false,
 	"set_max_bitrate": true,
 }
@@ -60,6 +61,20 @@ function get_profile_list() {
 			"vp9-profile0-L40-dash-cenc",
 		]);
 	}
+
+	if (my_config["use_AV1"]) {
+		custom_profiles = custom_profiles.concat([
+			"av1-main-L20-dash-cbcs-prk",
+			"av1-main-L21-dash-cbcs-prk",
+			"av1-main-L30-dash-cbcs-prk",
+			"av1-main-L31-dash-cbcs-prk",
+			"av1-main-L40-dash-cbcs-prk",
+			"av1-main-L41-dash-cbcs-prk",
+			"av1-main-L50-dash-cbcs-prk",
+			"av1-main-L51-dash-cbcs-prk",
+		]);
+	}
+
 
 	if (my_config["use_5.1"]) {
 		custom_profiles.push("heaac-5.1-dash");

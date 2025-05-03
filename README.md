@@ -15,7 +15,9 @@ It remains to be seen how robust my regexes will be to playercore updates.
 
 - 1080p video.
 
-- Disable VP9 profiles.
+- Enable AV1 profiles.
+
+- Enable VP9 profiles.
 
 - Enable 5.1 audio profile.
 
